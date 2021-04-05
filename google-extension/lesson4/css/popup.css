@@ -1,0 +1,275 @@
+:root {
+  --green: rgb(55, 160, 0);
+  --dark-green: #008329;
+  --blue: #14bff4;
+  --pane-padding: 5px 42px;
+  --grey: #f9f9f9;
+  --dark-grey: #9e9e9e;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/poppins/Poppins-Regular.ttf");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* orange     #FCB747 */
+html,
+body {
+  width: 320px;
+  height: 420px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  /* border: 1px solid var(--green); */
+  color: rgb(29, 67, 84);
+}
+.loginbox {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  visibility: hidden;
+}
+
+.loader {
+  visibility: hidden;
+  margin: 100px auto;
+  font-size: 25px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load5 1.1s infinite ease;
+  animation: load5 1.1s infinite ease;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load5 {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #bf4a4a,
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.5),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.7),
+      1.8em -1.8em 0 0em #bf4a4a, 2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.5),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.7), 2.5em 0em 0 0em #bf4a4a,
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.5),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.7), 1.75em 1.75em 0 0em #bf4a4a,
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.5),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.7), 0em 2.5em 0 0em #bf4a4a,
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.5),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.7), -1.8em 1.8em 0 0em #bf4a4a,
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.5),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.7), -2.6em 0em 0 0em #bf4a4a,
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.5),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.7), -1.8em -1.8em 0 0em #bf4a4a;
+  }
+}
+@keyframes load5 {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #bf4a4a,
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.5),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.7),
+      1.8em -1.8em 0 0em #bf4a4a, 2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.5),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.7), 2.5em 0em 0 0em #bf4a4a,
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.5),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.7), 1.75em 1.75em 0 0em #bf4a4a,
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.5),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.7), 0em 2.5em 0 0em #bf4a4a,
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.2),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.5),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.7), -1.8em 1.8em 0 0em #bf4a4a,
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.5),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.7), -2.6em 0em 0 0em #bf4a4a,
+      -1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(191, 74, 74, 0.2),
+      1.8em -1.8em 0 0em rgba(191, 74, 74, 0.2),
+      2.5em 0em 0 0em rgba(191, 74, 74, 0.2),
+      1.75em 1.75em 0 0em rgba(191, 74, 74, 0.2),
+      0em 2.5em 0 0em rgba(191, 74, 74, 0.2),
+      -1.8em 1.8em 0 0em rgba(191, 74, 74, 0.5),
+      -2.6em 0em 0 0em rgba(191, 74, 74, 0.7), -1.8em -1.8em 0 0em #bf4a4a;
+  }
+}
+.show {
+  visibility: visible;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 50px);
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.loginbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.loginbox a:hover {
+  color: #ffc107;
+}
