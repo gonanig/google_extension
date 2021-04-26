@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/animate.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js "></script>
+    <script src="wow.min.js"></script>
+    <script>
+      let wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animated",
+        offset: 0,
+        mobile: false,
+      });
+      wow.init();
+    </script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css"
+    />
+    <link rel="stylesheet" href="./scss/styles.css" />
+    <title>Sport events</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header-logo" src="/src/img/logo.png" alt="Logo" />
+      <nav class="header_navigation">
+        <a class="header_navigation-item" href="#">Информация</a>
+        <a class="header_navigation-item" href="#">Галерея</a>
+        <a class="header_navigation-item" href="#">События</a>
+        <a class="header_navigation-item" href="#">Контакты</a>
+        <a class="header_navigation-item" href="#">Товары</a>
+        <a class="header_navigation-item" href="#">Услуги</a>
+      </nav>
+      <div class="hamburger-menu hide_desktop">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Информация</a></li>
+          <li><a class="menu__item" href="#">Галерея</a></li>
+          <li><a class="menu__item" href="#">События</a></li>
+          <li><a class="menu__item" href="#">Контакты</a></li>
+          <li><a class="menu__item" href="#">Товары</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <img class="hero-img1" src="./img/bones.png" alt="Bones" />
+      <img class="hero-img2" src="./img/bones.png" alt="Bones" />
+      <img class="hero-img3" src="./img/dog.png" alt="Dog" />
+      <img class="hero-img4" src="./img/dog.png" alt="Dog" />
+      <h1 class="hero-text"></h1>
+      <button class="hero-btn">Action button</button>
+    </section>
+    <h1 class="news-title">Latest news</h1>
+    <section class="news">
+      <div class="news_box">
+        <figure
+          class="wow animate__animated animate__fadeInLeft"
+          data-wow-duration="2s"
+        >
+          <img src="/src/img/news.png" alt="Dog" />
+          <figcaption>
+            Et, a euismod maecenas leo ullamcorper enim quisque enim.
+          </figcaption>
+        </figure>
+        <p
+          class="wow animate__animated animate__fadeInLeft"
+          data-wow-duration="2s"
+        >
+          Et, a euismod maecenas leo ullamcorper enim quisque enimEt, a euismod
+          maecenas leo ullamcorper
+        </p>
+      </div>
+      <div class="news_box">
+        <figure
+          class="wow animate__animated animate__fadeInUp"
+          data-wow-duration="2s"
+          data-wow-delay="2s"
+        >
+          <img src="/src/img/news.png" alt="Dog" />
+          <figcaption>Et, a euismod maecenas!</figcaption>
+        </figure>
+        <p
+          class="wow animate__animated animate__fadeInUp"
+          data-wow-duration="2s"
+          data-wow-delay="2s"
+        >
+          Et, a euismod maecenas leo ullamcorper enim quisque enimEt, a euismod
+          maecenas leo ullamcorper Et, a euismod maecenas leo ullamcorper enim
+          quisque enimEt
+        </p>
+      </div>
+      <div class="news_box">
+        <figure
+          class="wow animate__animated animate__fadeInRight"
+          data-wow-duration="2s"
+          data-wow-delay="4s"
+        >
+          <img src="/src/img/news.png" alt="Dog" />
+          <figcaption>
+            Et, a euismod maecenas leo ullamcorper enim quisque enim.
+          </figcaption>
+        </figure>
+        <p
+          class="wow animate__animated animate__fadeInRight"
+          data-wow-duration="2s"
+          data-wow-delay="4s"
+        >
+          Et, a euismod maecenas leo ullamcorper enim quisque enimEt, a euismod
+          maecenas leo ullamcorper
+        </p>
+      </div>
+    </section>
+    <script type="module" src="/src/ js/index.js"></script>
+  </body>
+</html>
